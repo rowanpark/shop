@@ -11,6 +11,7 @@ import javax.transaction.Transactional;
 @Transactional
 @RequiredArgsConstructor
 public class MemberService {
+
     private final MemberRepository memberRepository;
 
     public Member saveMember(Member member) {
@@ -25,4 +26,5 @@ public class MemberService {
             throw new IllegalStateException("이미 가입된 회원입니다.");
         }
     }
+
 }
