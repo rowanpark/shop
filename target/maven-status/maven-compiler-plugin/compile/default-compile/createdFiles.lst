@@ -2,15 +2,19 @@ com/shop/entity/QMember.class
 com/shop/entity/QBaseEntity.class
 com/shop/entity/OrderItem.class
 com/shop/controller/ItemController.class
+com/shop/repository/ItemRepositoryCustomImpl.class
 com/shop/repository/CartRepository.class
 com/shop/entity/ItemImg.class
 com/shop/entity/QOrderItem.class
 com/shop/entity/CartItem.class
 com/shop/controller/ThymeleafExController.class
+com/shop/repository/ItemRepositoryCustom.class
 com/shop/entity/QCartItem.class
+com/shop/dto/MainItemDto.class
 com/shop/entity/QBaseTimeEntity.class
 com/shop/entity/Cart.class
 com/shop/constant/OrderStatus.class
+com/shop/dto/QMainItemDto.class
 com/shop/repository/OrderItemRepository.class
 com/shop/config/CustomAuthenticationEntryPoint.class
 com/shop/entity/QCart.class
@@ -22,6 +26,7 @@ com/shop/config/SecurityConfig.class
 com/shop/controller/MainController.class
 com/shop/entity/Item.class
 com/shop/constant/Role.class
+com/shop/service/ItemService.class
 com/shop/config/AuditorAwareImpl.class
 com/shop/service/MemberService.class
 com/shop/ShopApplication.class
