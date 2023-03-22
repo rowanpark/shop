@@ -29,6 +29,7 @@ public class ItemRepositoryCustomImpl implements ItemRepositoryCustom {
     }
 
     private BooleanExpression regDtsAfter(String searchDateType) {
+
         LocalDateTime dateTime = LocalDateTime.now();
 
         if(StringUtils.equals("all", searchDateType) || searchDateType == null) {
@@ -47,6 +48,7 @@ public class ItemRepositoryCustomImpl implements ItemRepositoryCustom {
     }
 
     private BooleanExpression searchByLike(String searchBy, String searchQuery) {
+
         if(StringUtils.equals("itemNm", searchBy)) {
             return QItem.item.itemNm.like("%" + searchQuery + "%");
         } else if(StringUtils.equals("createdBy", searchBy)) {
@@ -58,13 +60,15 @@ public class ItemRepositoryCustomImpl implements ItemRepositoryCustom {
 
     @Override
     public Page<Item> getAdminItemPage(ItemSearchDto itemSearchDto, Pageable pageable) {
+
         QueryResults<Item> results = queryFactory
                 .selectFrom(QItem.item)
                 .where(regDtsAfter(itemSearchDto.getSearchDateType()),
                         searchSellStatusEq(itemSearchDto.getSearchSellStatus()),
                         searchByLike(itemSearchDto.getSearchBy(), itemSearchDto.getSearchQuery()))
                 .orderBy(QItem.item.id.desc())
-                .offset(pageable.getPageSize())
+                .offset(pageable.getOffset())
+                .limit(pageable.getPageSize())
                 .fetchResults();
 
         List<Item> content = results.getResults();
