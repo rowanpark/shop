@@ -49,10 +49,14 @@ public class Item extends BaseEntity {
         int restStock = this.stockNumber - stockNumber;
 
         if(restStock < 0) {
-            throw new OutOfStockException("상품의 재고가 부족 합니다. (현재 재고 수량: )" + this.stockNumber + ")");
+            throw new OutOfStockException("상품의 재고가 부족 합니다. (현재 재고 수량: " + this.stockNumber + " )");
         }
 
         this.stockNumber = restStock;
+    }
+
+    public void addStock(int stockNumber) {
+        this.stockNumber += stockNumber;
     }
 
 }
