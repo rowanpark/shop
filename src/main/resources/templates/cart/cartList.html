@@ -233,7 +233,7 @@
             <tbody>
             <tr th:each="cartItem : ${cartItems}">
                 <td class="text-center align-middle">
-                    <input type="checkbox" name="cartChkBox" th:value="${cartItem.imgUrl}">
+                    <input type="checkbox" name="cartChkBox" th:value="${cartItem.cartItemId}">
                 </td>
                 <td class="d-flex">
                     <div class="repImgDiv align-self-center">
