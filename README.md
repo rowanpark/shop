@@ -9,7 +9,7 @@
 
 ### 히스토리<br/>
 - 230323 : html img 태그의 src 속성 값(url)에는 로컬 경로가 포함되면 안된다. 웹 브라우저는 로컬 파일 시스템에 직접 접근할 수 없기 때문이다.<br/>
-`/Users/rowan/Dev/images/shop/item/` 대신에 `/images/shop/item/` 사용<br/><br/><br/><br/>
+`/Users/rowan/Dev/images/shop/item/` 대신에 `/images/shop/item/` 사용<br/>
 
 - 230330 : `templates/item/itemMng.html`에서 `thymeleaf parsing error`가 발생하였다.
 ShopApplication을 올리고나서 한동안은 `itemMng.html`이 떴다가 일정 시간이 지나면 콘솔에 아래와 같은 메세지가 뜨면서 `Whitelabel Error Page(status=500)` 페이지가 화면에 로드됐다.
