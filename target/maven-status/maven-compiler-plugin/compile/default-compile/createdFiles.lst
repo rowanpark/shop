@@ -27,8 +27,10 @@ com/shop/controller/MainController.class
 com/shop/entity/Item.class
 com/shop/constant/Role.class
 com/shop/service/ItemService.class
+com/shop/dto/ItemSearchDto.class
 com/shop/config/AuditorAwareImpl.class
 com/shop/service/MemberService.class
+com/shop/dto/ItemFormDto.class
 com/shop/ShopApplication.class
 com/shop/repository/ItemRepository.class
 com/shop/repository/MemberRepository.class
