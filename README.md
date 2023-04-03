@@ -13,7 +13,7 @@
 
 - 230330 : `templates/item/itemMng.html`에서 `thymeleaf parsing error`가 발생하였다.
 ShopApplication을 올리고나서 한동안은 `itemMng.html`이 떴다가 일정 시간이 지나면 콘솔에 아래와 같은 메세지가 뜨면서 `Whitelabel Error Page(status=500)` 페이지가 화면에 로드됐다.
-해결방안을 못 찾고 있다가 com.shop.constant.ItemSellStatus.java enum 파일을 삭제했다 다시 생성하니 오류가 발생하지 않았다.
+해결방안을 못 찾고 있다가 `com.shop.constant.ItemSellStatus.java` enum 파일을 삭제했다 다시 생성하니 오류가 발생하지 않았다.
 찾지 못한 오타나 공백이 포함되어 있을 것으로 추정 중이나 정확한 원인은 파악하지 못했다.
   > 2023-03-27 14:46:48.459 ERROR 29710 --- [-nio-80-exec-10] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-80-exec-10] Exception processing template "item/itemMng": An error happened during template parsing (template: "class path resource [templates/item/itemMng.html]")
 
