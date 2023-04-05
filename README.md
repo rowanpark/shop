@@ -5,11 +5,14 @@
 - 기술 스택 :<br/>
 `Spring Boot`, `Spring Data JPA`, `Spring Security`, `Maven`, `Thymeleaf`, `Bootstrap`,<br/>
 `Java`, `JavaScript`, `JQuery`, `HTML5`, `CSS3`, `MySQL`
-- 사용 툴 : `IntelliJ`, `MySQLWorkbench`, `Mac Terminal`<br/><br/>
+- 사용 툴 : `IntelliJ`, `MySQLWorkbench`, `Mac Terminal`
+
+<br/>
 
 ### 히스토리
+
 - 230323 : html img 태그의 src 속성 값(url)에는 로컬 경로가 포함되면 안된다. 웹 브라우저는 로컬 파일 시스템에 직접 접근할 수 없기 때문이다.<br/>
-`/Users/rowan/Dev/images/shop/item/` 대신에 `/images/shop/item/` 사용<br/>
+`/Users/rowan/Dev/images/shop/item/` 대신에 `/images/shop/item/` 사용
 
 - 230330 : `templates/item/itemMng.html`에서 `thymeleaf parsing error`가 발생하였다.
 ShopApplication을 올리고나서 한동안은 `itemMng.html` 페이지가 웹 화면에 떴다.
